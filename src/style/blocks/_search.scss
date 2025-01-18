@@ -1,0 +1,36 @@
+@use '../helpers' as *;
+
+.search-form{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: rem(15);
+	transition: var(--transition);
+	padding-inline: rem(10);
+	width: 100%;
+	@include glass;
+	&:hover{
+		box-shadow: 0px 0px rem(10) rgba(255, 255, 255, 0.2);
+	}
+	&__input{
+		padding: rem(7) rem(14);
+		background: none;
+		outline: none;
+		border: none;
+		width: 100%;
+		color: var(--white);
+		&::placeholder{
+			color: var(--white);
+			font-weight: var(--thin);
+		}
+	}
+	&__button{
+		@include flex-center;
+		background: none;
+		border: none;
+		outline: none;
+		svg{
+			fill: inherit;
+		}
+	}
+}

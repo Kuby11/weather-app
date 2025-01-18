@@ -1,0 +1,20 @@
+@use '../helpers' as *;
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	fill: var(--white);
+	
+	--size: #{rem(24)};
+
+	height: var(--size);
+	width: var(--size);
+	svg{
+		width: inherit;
+		height: inherit;
+	}
+	&__weather{
+		--size: #{rem(150)};
+	}
+}

@@ -1,0 +1,13 @@
+@use 'helpers' as *;
+
+@use 'normalize';
+@use 'variables';
+@use 'utils';
+@use 'fonts';
+@use 'globals';
+
+@use './blocks/app';
+@use './blocks/background';
+@use './blocks/search';
+@use './blocks/icons'; 
+@use './blocks/button'; 
