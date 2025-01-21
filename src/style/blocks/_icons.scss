@@ -15,6 +15,6 @@
 		height: inherit;
 	}
 	&__weather{
-		--size: #{rem(150)};
+		--size: #{fluid(150, 120)};
 	}
 }

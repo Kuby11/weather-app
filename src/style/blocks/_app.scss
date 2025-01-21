@@ -6,8 +6,8 @@
 		align-items: center;
 		justify-content: center;
 		gap: rem(50);
-	padding: rem(20);
-	width: rem(450);
+	padding: fluid(20, 10);
+	width: fluid(450, 290);
 	@include glass
 }
 
@@ -23,9 +23,9 @@
 		gap: rem(50);
 		@include flex-center;
 		.city{
-			font-size: rem(40);
-			font-family: var(--bold);
-			font-weight: var(--bold);
+			font-size: fluid(40, 35);
+			font-family: var(--font-family);
+			font-weight: var(--x-bold);
 			text-transform: uppercase;
 			letter-spacing: rem(5);
 		}
@@ -34,7 +34,7 @@
 
 .weather-content{
 	flex-direction: column;
-	gap: rem(10);
+	gap: fluid(10, 5);
 	@include flex-center;
 }
 .weather{
@@ -58,27 +58,25 @@
 		display: flex;
 			align-items: center;
 			justify-content: space-between;
-			width: 100%;
-			padding: rem(20);
-			transition: var(--transition);
-			@include glass;
-			&:hover{
-				box-shadow: 0px 0px rem(10) rgba(255, 255, 255, 0.2);
-			}
+			gap: fluid(20, 10);
+		width: 100%;
+		padding: rem(20);
+		transition: var(--transition);
+		@include glass;
+		&:hover{
+			box-shadow: 0px 0px rem(10) rgba(255, 255, 255, 0.2);
+		}
 		&__card{
 			flex-direction: column;
 			@include flex-center;
-			h3,p{
-				margin: 0;
-			}
 			h3{
-				font-size: rem(25);
+				font-size: fluid(25, 16);
 				font-weight: var(--bold);
 			}
 			p{
 				font-weight: var(--thin);
 				color: var(--gray);
-				margin-top: rem(-10);
+				margin-top: rem(-5);
 			}
 		}
 		&__icon{
