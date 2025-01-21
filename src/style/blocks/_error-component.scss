@@ -1,0 +1,40 @@
+@use '../helpers' as *;
+
+.error-component{
+	position: absolute;
+		bottom: rem(50);
+		right: fluid(50, 30);
+	min-width: rem(100);
+	max-width: rem(400);
+	min-height: rem(50);
+	padding: rem(20);
+	margin-inline: rem(10);
+	display: flex;
+		align-items: center;
+		justify-content: start;
+		gap: rem(5);
+	transition: var(--transition);
+	translate: rem(500);
+
+	@include glass;
+	background-color: var(--color-error);
+	
+	@media (width <= 375px) {
+		right: 0;
+	}
+	h3{
+		font-size: rem(18);
+	}
+	&__icon{
+		&::after{
+			display: flex;
+			content: "";
+			width: rem(24);
+			height: rem(24);
+			background-image: url(/public/assets/icons/close_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+}
